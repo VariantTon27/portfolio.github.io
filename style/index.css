@@ -1,0 +1,520 @@
+
+@font-face {
+    font-family: "Stellar-Medium";
+    src: url('../fonts/Stellar-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "Stellar-Bold";
+    src: url('../fonts/Stellar-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "Stellar-Regular";
+    src: url('../fonts/Stellar-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "Nidsans";
+    src: url('../fonts/nidsans-webfont.ttf') format('opentype')
+}
+
+/* @font-face {
+    font-family: "Orbitron";
+    src: url("../fonts/Orbitron/Orbitron-VariableFont_wght.ttf") format("opentype");
+  }
+ */
+
+/* @font-face {
+    font-family: "Anurati";
+    src: url("../fonts/Anurati-Regular.otf") format("opentype");
+  } */
+
+
+/** Scroll Bar Effect **/
+::-webkit-scrollbar {
+    width: 10px;
+    
+}
+::-webkit-scrollbar-track{
+    background: linear-gradient(#868F96, #596164);
+    border: 1px solid #ddd;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#11998E,#38EF7D);
+    transition: all 0.3s ease;
+    
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    /* background: #fff; */
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    /* box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1); */
+
+
+    /*Change Font*/
+    font-family: "Nidsans";
+     
+
+    /** Glasshmorphism **/
+    background: rgba( 231, 0, 0, 0 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11px );
+    -webkit-backdrop-filter: blur( 11px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+
+header nav li ul .logo {
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+
+    margin: 10px 0 0 10px;
+}
+
+/* header nav li ul .logo img {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+} */
+
+header nav li ul .logo .logoText {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.logoText {
+    font-size: 22px;
+    letter-spacing: 9px;
+    color: #FFB6C1;
+}
+
+header nav li a {
+    position: relative;
+    color: rgb(85, 83, 83);
+    display: table;
+    width: 300px;
+    padding: 10px;
+}
+
+header nav li a .fa-solid, .fa-brands {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+
+    color: #98FB98;
+}
+
+
+
+header nav ul li a .nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+    letter-spacing: 2px;
+    
+    font-size: 14px;
+
+}
+
+header nav ul li a .nav-item.main {
+    color: #98FB98;
+}
+
+
+header nav ul li a:hover{
+    background: #0A2E5C;
+}
+
+header:hover {
+    width: 280px;
+    transition: all 0.5s ease-in-out;   
+}
+
+
+header nav ul .links {
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+/* Color Social Media Icons */
+
+/* Facebook color */
+.fa-brands.fa-facebook, .facebook {
+    color: #3b5998;
+}
+
+/*Twitter color */
+.fa-brands.fa-twitter, .twitter {
+    color: #00acee;
+}
+
+
+/*Instagram color */
+.fa-brands.fa-instagram, .instagram {
+    color: rgb(255, 200, 56);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** Main ***/
+
+main article {
+   /*  padding: 230px; */
+    height: 100vh;
+    margin-left: 100px;
+}
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    background-attachment: fixed;
+}
+
+/** Hero **/
+
+main .hero {
+    margin: 0;
+    height: 100vh;
+    padding: 230px;
+}
+
+
+main .hero .content {
+    margin: auto;
+    color: white;
+    font-family: "Stellar-Regular";
+    letter-spacing: 4px;
+}
+
+main .hero .content p, h1, h2 {
+    margin-top: 15px;
+}
+
+main .hero .content p {
+    font-size: 30px;
+}
+
+main .hero .content h1 {
+    font-size: 55px;
+    
+}
+
+main .hero .content h1 span {
+    font-family: "Stellar-Bold";
+    font-size: 2px solid 70px;
+}
+
+main .hero .content button {
+    margin-top: 20px;
+    padding: 10px;
+    font-family: "Stellar-Medium";
+    color: black;
+    font-size: 18px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    border: 2px solid black;
+    background-color: #3b5998;
+    font-weight: bold;
+}
+
+
+
+
+/** About Me **/
+
+main .aboutMe {
+    background: white;
+    padding: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+    height: 100%;
+    margin-left: 0;
+
+    /*Glassmorphism*/
+    background: rgba( 255, 255, 255, 0.1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+main .aboutMe .title {
+    margin-bottom: 60px;
+}
+
+main .aboutMe h2 {
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: "Stellar-Bold";
+}
+
+main .aboutMe .container {
+    display: flex;
+    flex-direction: row;
+}
+
+main .aboutMe .image {
+    width: 35%;
+}
+
+main .aboutMe .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+
+/** About ME Content **/
+main .aboutMe .content {
+    width: 65%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .aboutMe .content h2 {
+    margin-bottom: 10px;
+    columns: #0E2431;
+}
+
+main .aboutMe .content p {
+    font-family: "Stellar-Regular";
+}
+
+
+
+
+
+/** My Skills Section **/
+main .skill {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+    
+
+    /** GlasshMorphism **/
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+main .skill .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 10px;
+}
+
+main .skill .title {
+    margin-bottom: 60px;
+}
+
+main .skill .title h2 {
+    text-align: center;
+    color: black;
+    font-family: "Stellar-Medium";
+    letter-spacing: 3px;
+}
+
+main .skill .container .box {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+main .skill .container .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+main .skill .container .box .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    height: 100%;
+    border-radius: 40%;
+    color: white;
+    display: flex;
+    font-family: "Stellar-Medium";
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+
+    transition: 0.50s ease-in-out;
+}
+
+main .skill .container .box .image-overlay:hover {
+    opacity: 1;
+}
+
+main .skill .container .box .image-overlay h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/** Background icons **/
+
+
+
+
+
+
+
+
+
+
+
+
+/** Services **/
+
+main .services {
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+    margin: 0;
+    margin-top: 20px;
+    height: 100%;
+}
+
+main .services .title {
+    margin-bottom: 60px;
+    
+}
+
+main .services h2 {
+    
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: "Stellar-Bold";
+}
+
+.services .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+    margin-left: 100px;
+    margin-right: 10px;
+
+
+    font-family: "Stellar-Regular";
+
+}
+  .services .boxes .box{
+    margin: 20px 0;
+    width: calc(100% / 3 - 20px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    cursor: default;
+    transition: all 0.4s ease;
+  }
+  .services .boxes .box:hover{
+    background: #1c2744;
+    color: #fff;
+  }
+  .services .boxes .box .icon{
+    height: 50px;
+    width: 50px;
+    background: #1f2f5c;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+  }
+  .boxes .box:hover .icon{
+    background-color: #fff;
+    color: #192238;
+  }
+  .services .boxes .box:hover .topic,
+  .services .boxes .box:hover p{
+    color: #0E2431;
+    transition: all 0.4s ease;
+  }
+  .services .boxes .box:hover .topic,
+  .services .boxes .box:hover p{
+    color: #fff;
+  }
+
+
+
+
+
+
+
+
+
+
+  /** Contact Me **/
+
